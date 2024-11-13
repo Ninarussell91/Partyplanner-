@@ -1,7 +1,7 @@
-import (useState)
+export default function Authenticate({ token }) {
 export default function SignupForm() {
+  import (useState)
 
-    export default function Authenticate({ token }) {
         const [successMessage, setSuccessMessage] = useState(null);
         const [error, setError] = useState(null);
       
@@ -13,7 +13,7 @@ const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 const [error, setError] = useState(null);
 
-Async function handlesubmit (event) {setToken(result.token);
+async function handlesubmit (event) {setToken(result.token);
     event.preventDefault();
     console.log (Hello);
     try {
@@ -44,9 +44,9 @@ Async function handlesubmit (event) {setToken(result.token);
 
     
  }
-return( <h2> Sign Up!</h2>;
+return( <h2> Sign Up!</h2>)
     <div>
-    {error && <p>{error}</p>}
+    {error, && <p> error</p>}
 <form>
 <form onSubmit={handleSubmit}></form>
 
@@ -84,8 +84,8 @@ Password: <input
 
 
 </div>    
-</>
-);
+
+;
 
 }    
     
